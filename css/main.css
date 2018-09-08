@@ -1,0 +1,118 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    /* background: linear-gradient(#C05D02, #3A184B); */
+    background: linear-gradient(0deg, #C05D02, #3A184B);
+    height: 100vh;
+    color: #fff
+}
+
+#header {
+    background: linear-gradient(#C05D02, #3A184B);
+    color: #FFFF00;
+    font-size: 1em
+}
+
+/* 24 hourforecast */
+#twoFourFore {
+    /* width: 80%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hours {}
+
+.hours p {
+    text-align: center;
+    margin-bottom: 0
+}
+
+.hours p:nth-child(2) {}
+
+/* five day forecast summary and mouseover instruction */
+#fiveDFsummary {
+    text-align: center;
+    font-size: 1.8em;
+    color: #FFFF00
+}
+
+#fiveDFsummary img {
+    vertical-align: middle;
+    width: 3em
+}
+
+#instructionsLocation {
+    text-align: center
+}
+
+/* five day forecast  */
+#DCON {
+    display: flex;
+    justify-content: center
+}
+
+#DCON img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+div[id^="DOTF"] {
+    background: linear-gradient(0deg, #000EEA, #000EEA 60px, #0030F0 10px, #0030F0 120px, #0441FE 10px, #0441FE 180px, #0065F6 10px, #0065F6 240px, #1E74FF 10px, #1E74FF 300px, #2581FE 10px, #2581FE 360px, #6295FF 10px, #6295FF 420px);
+    color: #fff;
+    border: 5px solid #7265A8;
+    border-radius: 3px;
+    max-width: 220px;
+    min-width: 220px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: -1em
+}
+
+.highLow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.highLow p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    text-align: center
+}
+
+.highLow span {
+    font-size: 4em
+}
+
+/* five day individual summary */
+.fiveSummary {
+    min-height: 96px;
+    padding: 1em;
+    margin-bottom: 0;
+    color: #FFFF00
+}
+
+/* sunrise sunset time */
+.sunTime {
+    display: flex;
+    justify-content: space-around;
+    text-align: center
+}
+
+.sunTime span {
+    display: block;
+    font-size: 1.5em
+}
+
+/* popup */
+.popup {
+    border: 1px solid rgba(0, 11, 19, 0.8);
+    background-color: rgba(0, 11, 19, 0.8);
+    padding: .6em;
+}
