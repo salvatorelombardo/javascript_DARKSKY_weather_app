@@ -180,7 +180,7 @@ weatherApp.currently = function (currentWeather, locData) {
 weatherApp.fiveDayForecast = function (fiveDayForecast) {
     var twoFourFore, summary, i = 0,
         instructions = '',
-        DOTW = '<div id="DCON">',
+        DOTW = '<div id="DCON" class="row">',
         FDFI, DAY, d, n, instructionsLocation;
 
     DAY = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
@@ -192,7 +192,7 @@ weatherApp.fiveDayForecast = function (fiveDayForecast) {
     twoFourFore = document.getElementById('header');
     // console.log(fiveDayForecast.summary);
     // return
-    summary = '<div id="fiveDF"><p id="fiveDFsummary">' + '<img src="images/' + fiveDayForecast.icon + '.svg">' + ' ' + fiveDayForecast.summary + '</p></div>';
+    summary = '<div id="fiveDF" class="container-fluid"><p id="fiveDFsummary">' + '<img src="images/' + fiveDayForecast.icon + '.svg">' + ' ' + fiveDayForecast.summary + '</p></div>';
 
     instructions = '<div id="instructionsLocation"><p>Rollover day-of-the-week for additional weather information</p></div>'
 
@@ -216,7 +216,7 @@ weatherApp.fiveDayForecast = function (fiveDayForecast) {
 
 
 
-        DOTW += '<div id="DOTF' + i + '" style="margin:1em">';
+        DOTW += '<div id="DOTF' + i + '" style="margin:1em" class="col-10 col-sm-5 col-md-5 col-lg-3">';
         if (i === 0) {
 
             DOTW += '<h1>TODAY</h1>';
@@ -253,7 +253,7 @@ weatherApp.fiveDayForecast = function (fiveDayForecast) {
 
         DOTW += '<img src="images/' + fiveDayForecast.data[i].icon + '.svg">';
         DOTW += '<div class="highLow"><div><p>Hi</p><span>' + Math.floor(fiveDayForecast.data[i].temperatureHigh) + '</span></div><div><p>Lo</p><span>' + Math.floor(fiveDayForecast.data[i].temperatureLow) + '</span></div></div>'
-        DOTW += '<p class="fiveSummary">' + fiveDayForecast.data[i].summary + '</p>';
+        DOTW += '<p class="fiveSummary text-center">' + fiveDayForecast.data[i].summary + '</p>';
         DOTW += '<div class="sunTime"><p>Sunrise ' + '<span>' + newTime + '</span></p><p> Sunset ' + '<span>' + weatherApp.milToStandard(weatherApp.msToTime(fiveDayForecast.data[i].sunsetTime)) + '</span></p></div>'
         // DOTW += weatherApp.msToTime(fiveDayForecast.data[i].sunsetTime);
         DOTW += '</div>'
