@@ -5,7 +5,7 @@ weatherApp.init = function () {
     // var farhenheit, celsius;
     var wData = {}
     var weatherApi = 'https://api.darksky.net/forecast/';
-    var apiKey = '75022eaee77bdb4c68e857d58d0ba4c4';
+    var apiKey = '';
 
     wData.weatherApi = weatherApi;
     wData.apiKey = apiKey;
